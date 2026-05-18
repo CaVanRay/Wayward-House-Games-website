@@ -6,7 +6,11 @@ body {
     padding: 50px;
     transition: background-color 0.5s ease;
 }
-
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 header h1 {
     color: #333;
 }
