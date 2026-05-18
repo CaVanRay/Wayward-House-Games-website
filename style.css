@@ -20,7 +20,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-<img src="CatsTaleConcept.jpeg" alt="A Cat's Tale Character Concept Art" style="width: 100%; height: auto;">
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
 
 button:hover {
     background-color: #0056b3;
