@@ -26,6 +26,9 @@ let d;
 document.addEventListener("keydown", direction);
 
 function direction(event) {
+    if([37, 38, 39, 40].includes(event.keyCode)){
+        event.preventDefault();
+    }
     if(event.keyCode == 37 && d != "RIGHT") d = "LEFT";
     else if(event.keyCode == 38 && d != "DOWN") d = "UP";
     else if(event.keyCode == 39 && d != "LEFT") d = "RIGHT";
