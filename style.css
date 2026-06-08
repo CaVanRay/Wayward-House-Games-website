@@ -10,11 +10,28 @@ body {
 }
 header {
     display: flex;
-    justify-content: space-between; /* Pushes title to left, logo to right */
-    align-items: center;            /* Vertically centers items */
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;            
     padding: 15px 20px;
-    background-color: #333;         /* Dark background for the bar */
+    background-color: #333;         
     color: white;
+}
+
+.site-title {
+    order: 1;
+    flex: 1 0 0;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-logo {
+    order: 2;
+    flex: 0 0 auto;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Ensure the h1 doesn't have default margins pushing things around */
@@ -22,6 +39,7 @@ header h1 {
     margin: 0;
     font-size: 1.5rem;
     color: white;                   /* Overrides the old #333 color */
+    display: inline-block;
 }
 
 /* Style the logo image */
@@ -33,6 +51,7 @@ header h1 {
 
 /* Style Navigation Links */
 nav {
+    order: 3;
     width: 100%;
     text-align: center;
     margin-top: 10px;
