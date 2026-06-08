@@ -1,4 +1,4 @@
-/* style.css */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -45,4 +45,13 @@ canvas {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;           /* Makes the container full viewport height */
+    text-align: center;      /* Ensures text inside is centered */
+    flex-direction: column;  /* Stacks items vertically if you add more later */
 }
