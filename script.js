@@ -1,4 +1,15 @@
 
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+// Set random background on load
+document.body.style.backgroundColor = getRandomColor();
 
 //******************** Color Button *********************************
 
@@ -6,17 +17,11 @@ const button = document.getElementById('colorButton');
 
 // Function to generate a random color
 if (button) {
-    function getRandomColor() {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
+    
     button.addEventListener('click', () => {
         document.body.style.backgroundColor = getRandomColor();
     });
+    
 }
 
 //********************** Snake Game *********************************
