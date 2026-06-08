@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #ff0000;
-    padding: 50px;
+    magin: 0;
+    padding: 0;
+    min-height: 100vh;
     transition: background-color 1.0s ease;
 }
 main {
