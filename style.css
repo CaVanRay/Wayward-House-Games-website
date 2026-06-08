@@ -8,13 +8,47 @@ body {
     min-height: 100vh;
     transition: background-color 1.0s ease;
 }
+header {
+    display: flex;
+    justify-content: space-between; /* Pushes title to left, logo to right */
+    align-items: center;            /* Vertically centers items */
+    padding: 15px 20px;
+    background-color: #333;         /* Dark background for the bar */
+    color: white;
+}
+
+/* Ensure the h1 doesn't have default margins pushing things around */
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;                   /* Overrides the old #333 color */
+}
+
+/* Style the logo image */
+.logo-img {
+    height: 50px;       /* Adjust height as needed */
+    width: auto;        /* Maintains aspect ratio */
+    display: block;
+}
+
+/* Style Navigation Links */
+nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    display: block; /* Ensures nav sits below the title/logo row if needed */
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-header h1 {
-    color: #333;
 }
 
 button {
@@ -39,10 +73,6 @@ canvas {
 #score {
     font-size: 24px;
     margin-top: 10px;
-}
-.responsive-img {
-  width: 50%;
-  height: auto;
 }
 
 button:hover {
