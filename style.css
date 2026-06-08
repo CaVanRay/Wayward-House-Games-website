@@ -57,3 +57,11 @@ button:hover {
     text-align: center;      /* Ensures text inside is centered */
     flex-direction: column;  /* Stacks items vertically if you add more later */
 }
+
+.responsive-img {
+  max-width: 300px; /* Limits the image to 300px wide maximum */
+  width: 100%;      /* Allows it to shrink on mobile screens */
+  height: auto;     /* Maintains the aspect ratio */
+  display: block;   /* Removes extra space below the image */
+  margin: 20px auto; /* Centers the image and adds spacing */
+}
