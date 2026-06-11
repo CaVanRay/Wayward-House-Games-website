@@ -56,6 +56,15 @@ nav {
     text-align: center;
     margin-top: 10px;
     display: block; /* Ensures nav sits below the title/logo row if needed */
+    
+    /* New styles for the split effect */
+    background-color: #000000; /* Black background */
+    padding: 10px 0;           /* Optional: Add vertical spacing */
+    margin-left: -20px;        /* Optional: Extend to full edge if header has padding */
+    margin-right: -20px;       /* Optional: Extend to full edge */
+    padding-left: 20px;        /* Re-add padding for content */
+    padding-right: 20px;       /* Re-add padding for content */
+    
 }
 
 nav a {
